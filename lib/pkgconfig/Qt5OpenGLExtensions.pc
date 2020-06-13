@@ -1,0 +1,14 @@
+prefix=/home/owner/qnx/qt5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 OpenGLExtensions
+Description: Qt OpenGLExtensions module
+Version: 5.6.4
+Libs: -L${libdir} -lQt5OpenGLExtensions 
+Libs.private: -L/home/owner/bbndk/target_10_3_1_995/qnx6/armle-v7/lib -L/home/owner/bbndk/target_10_3_1_995/qnx6/armle-v7/usr/lib -L/home/owner/qnx/qt5/lib -lQt5Gui -lQt5Core -lm -lpps -lbps -lGLESv2 -lEGL 
+Cflags: -I${includedir}/QtOpenGLExtensions -I${includedir}
+Requires: Qt5Core Qt5Gui
+

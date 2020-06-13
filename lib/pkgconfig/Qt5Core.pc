@@ -1,0 +1,14 @@
+prefix=/home/owner/qnx/qt5
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config no-pkg-config fontconfig accessibility egl opengl opengles2 shared qpa reduce_exports stack-protector-strong clock-gettime clock-monotonic posix_fallocate getaddrinfo ipv6ifname getifaddrs inotify system-jpeg system-png png system-freetype harfbuzz system-zlib iconv dbus openssl rpath alsa icu concurrent audio-backend release
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.6.4
+Libs: -L${libdir} -lQt5Core 
+Cflags: -I${includedir}/QtCore -I${includedir}
+
